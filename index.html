@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://kit.fontawesome.com/986b3ceac6.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Gym</title>
+  </head>
+  <body>
+    <div class="nav">
+      <nav class="nav-bar">
+        <ul>
+          <li>Home</li>
+          <li>Join us</li>
+          <li>About</li>
+          <li class="log-btn"><a href="#login">Log in</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="wrapper login">
+      <span class="close-icon">
+        <i class="fa-sharp fa-solid fa-xmark"></i>
+      </span>
+
+      <div class="form-box login">
+        <h2 class="tt">Log In</h2>
+        <form>
+          <div class="input-box">
+            <label>Email</label>
+            <input type="email" placeholder="name@email.com" required />
+          </div>
+          <div class="input-box">
+            <label>Password</label>
+            <input type="password" placeholder="Password" required />
+          </div>
+          <div class="forgot">
+            <label> <input type="checkbox" /> Remember me? </label>
+            <a href="#">Forgot password?</a>
+          </div>
+          <button type="submit" class="bnt">Login</button>
+          <div class="reg">
+            <p>
+              Dont have an account?<a href="#" class="register-link"
+                >Register</a
+              >
+            </p>
+          </div>
+        </form>
+      </div>
+      <div class="form-box register">
+        <h2 class="tt">Register</h2>
+        <form>
+          <div class="input-box">
+            <label>Your name</label>
+            <input type="email" placeholder="Name" required />
+          </div>
+          <div class="input-box">
+            <label>Your name</label>
+            <input type="email" placeholder="name@email.com" required />
+          </div>
+          <div class="input-box">
+            <label>Password</label>
+            <input type="password" placeholder="Password" required />
+          </div>
+          <div class="input-box">
+            <label>Confirm Password</label>
+            <input type="password" placeholder="Confirm Password" required />
+          </div>
+
+          <button type="submit" class="bnt">Register</button>
+          <div class="reg">
+            <p>Have an account?<a href="#" class="login-link">Login</a></p>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <section class="home">
+      <div class="home-description">
+        <h1 class="section_title home-title">Elevate Fitness Center</h1>
+        <h2 class="section_description home_description">
+          Transform Your Body, Unleash Your Potential!
+        </h2>
+      </div>
+      <button class="cssbuttons-io-button">
+        Get started
+        <div class="icon">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            width="24"
+            height="24"
+          >
+            <path fill="none" d="M0 0h24v24H0z"></path>
+            <path
+              fill="currentColor"
+              d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+            ></path>
+          </svg>
+        </div>
+      </button>
+    </section>
+    <section class="progs">
+      <h1 class="section_title progs-title">Our programs</h1>
+      <div class="programs">
+        <div class="prog-card">
+          <img src="img/frun.jpg" class="prog-pic" alt="pic" />
+          <h1 class="prog_description">Weight Loss</h1>
+          <button class="prog-btn">
+            <span></span>
+            <svg
+              width="34"
+              height="34"
+              viewBox="0 0 74 74"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle
+                cx="37"
+                cy="37"
+                r="35.5"
+                stroke="black"
+                stroke-width="3"
+              ></circle>
+              <path
+                d="M25 35.5C24.1716 35.5 23.5 36.1716 23.5 37C23.5 37.8284 24.1716 38.5 25 38.5V35.5ZM49.0607 38.0607C49.6464 37.4749 49.6464 36.5251 49.0607 35.9393L39.5147 26.3934C38.9289 25.8076 37.9792 25.8076 37.3934 26.3934C36.8076 26.9792 36.8076 27.9289 37.3934 28.5147L45.8787 37L37.3934 45.4853C36.8076 46.0711 36.8076 47.0208 37.3934 47.6066C37.9792 48.1924 38.9289 48.1924 39.5147 47.6066L49.0607 38.0607ZM25 38.5L48 38.5V35.5L25 35.5V38.5Z"
+                fill="black"
+              ></path>
+            </svg>
+          </button>
+        </div>
+        <div class="prog-card">
+          <img src="img/frun.jpg" class="prog-pic" alt="pic" />
+          <h1 class="prog_description">Weight Loss</h1>
+          <button class="prog-btn">
+            <span></span>
+            <svg
+              width="34"
+              height="34"
+              viewBox="0 0 74 74"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle
+                cx="37"
+                cy="37"
+                r="35.5"
+                stroke="black"
+                stroke-width="3"
+              ></circle>
+              <path
+                d="M25 35.5C24.1716 35.5 23.5 36.1716 23.5 37C23.5 37.8284 24.1716 38.5 25 38.5V35.5ZM49.0607 38.0607C49.6464 37.4749 49.6464 36.5251 49.0607 35.9393L39.5147 26.3934C38.9289 25.8076 37.9792 25.8076 37.3934 26.3934C36.8076 26.9792 36.8076 27.9289 37.3934 28.5147L45.8787 37L37.3934 45.4853C36.8076 46.0711 36.8076 47.0208 37.3934 47.6066C37.9792 48.1924 38.9289 48.1924 39.5147 47.6066L49.0607 38.0607ZM25 38.5L48 38.5V35.5L25 35.5V38.5Z"
+                fill="black"
+              ></path>
+            </svg>
+          </button>
+        </div>
+        <div class="prog-card">
+          <img src="img/frun.jpg" class="prog-pic" alt="pic" />
+          <h1 class="prog_description">Weight Loss</h1>
+          <button class="prog-btn">
+            <span></span>
+            <svg
+              width="34"
+              height="34"
+              viewBox="0 0 74 74"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle
+                cx="37"
+                cy="37"
+                r="35.5"
+                stroke="black"
+                stroke-width="3"
+              ></circle>
+              <path
+                d="M25 35.5C24.1716 35.5 23.5 36.1716 23.5 37C23.5 37.8284 24.1716 38.5 25 38.5V35.5ZM49.0607 38.0607C49.6464 37.4749 49.6464 36.5251 49.0607 35.9393L39.5147 26.3934C38.9289 25.8076 37.9792 25.8076 37.3934 26.3934C36.8076 26.9792 36.8076 27.9289 37.3934 28.5147L45.8787 37L37.3934 45.4853C36.8076 46.0711 36.8076 47.0208 37.3934 47.6066C37.9792 48.1924 38.9289 48.1924 39.5147 47.6066L49.0607 38.0607ZM25 38.5L48 38.5V35.5L25 35.5V38.5Z"
+                fill="black"
+              ></path>
+            </svg>
+          </button>
+        </div>
+        <div class="prog-card">
+          <img src="img/frun.jpg" class="prog-pic" alt="pic" />
+          <h1 class="prog_description">Weight Loss</h1>
+          <button class="prog-btn">
+            <span></span>
+            <svg
+              width="34"
+              height="34"
+              viewBox="0 0 74 74"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle
+                cx="37"
+                cy="37"
+                r="35.5"
+                stroke="black"
+                stroke-width="3"
+              ></circle>
+              <path
+                d="M25 35.5C24.1716 35.5 23.5 36.1716 23.5 37C23.5 37.8284 24.1716 38.5 25 38.5V35.5ZM49.0607 38.0607C49.6464 37.4749 49.6464 36.5251 49.0607 35.9393L39.5147 26.3934C38.9289 25.8076 37.9792 25.8076 37.3934 26.3934C36.8076 26.9792 36.8076 27.9289 37.3934 28.5147L45.8787 37L37.3934 45.4853C36.8076 46.0711 36.8076 47.0208 37.3934 47.6066C37.9792 48.1924 38.9289 48.1924 39.5147 47.6066L49.0607 38.0607ZM25 38.5L48 38.5V35.5L25 35.5V38.5Z"
+                fill="black"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="about-us">
+      <img src="img/instuctor.jpeg" class="about-img" alt="img" />
+      <div class="about-sec">
+        <h1 class="section_title about-title">About us</h1>
+        <h1 class="section_title about-description">Our story</h1>
+        <p class="section_description about_description">
+          Welcome to Elevate Fitness Center, where we believe in pushing
+          boundaries, exceeding expectations, and transforming lives. At Elevate
+          Fitness Center, we are dedicated to providing a dynamic and empowering
+          environment for individuals of all fitness levels. Whether you are a
+          seasoned athlete or taking your first steps towards a healthier
+          lifestyle, our state-of-the-art facility and experienced team are here
+          to support you on your fitness journey. We believe that fitness is not
+          just about physical strength, but also about mental resilience and
+          overall well-being. Our comprehensive range of equipment and diverse
+          fitness programs cater to all your needs, allowing you to challenge
+          yourself, break barriers, and achieve your goals.
+        </p>
+        <button class="btn"><span>Read More</span></button>
+      </div>
+    </section>
+    <section class="team">
+      <h1 class="section_title team-title">Our Team</h1>
+      <div class="our-team">
+        <div class="card">
+          <div class="card-photo"></div>
+          <div class="card-title">
+            JOHN DOE <br />
+            <span>Trainer</span>
+          </div>
+          <div class="card-socials">
+            <button class="card-socials-btn facebook">
+              <svg
+                class="icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                viewBox="0 0 24 24"
+                id="Layer_21"
+                height="24"
+                data-name="Layer 21"
+              >
+                <title></title>
+                <path
+                  d="M16.75,9H13.5V7a1,1,0,0,1,1-1h2V3H14a4,4,0,0,0-4,4V9H8v3h2v9h3.5V12H16Z"
+                ></path>
+              </svg>
+            </button>
+            <button class="card-socials-btn github">
+              <svg
+                viewBox="0 0 24 24"
+                height="33"
+                width="33"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                ></path>
+              </svg>
+            </button>
+            <button class="card-socials-btn linkedin">
+              <svg
+                height="512"
+                viewBox="0 0 512 512"
+                width="512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="m51.326 185.85h90.011v270.872h-90.011zm45.608-130.572c-30.807 0-50.934 20.225-50.934 46.771 0 26 19.538 46.813 49.756 46.813h.574c31.396 0 50.948-20.814 50.948-46.813-.589-26.546-19.551-46.771-50.344-46.771zm265.405 124.209c-47.779 0-69.184 26.28-81.125 44.71v-38.347h-90.038c1.192 25.411 0 270.872 0 270.872h90.038v-151.274c0-8.102.589-16.174 2.958-21.978 6.519-16.174 21.333-32.923 46.182-32.923 32.602 0 45.622 24.851 45.622 61.248v144.926h90.024v-155.323c0-83.199-44.402-121.911-103.661-121.911z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-photo"></div>
+          <div class="card-title">
+            JANE DOE <br />
+            <span>Trainer</span>
+          </div>
+          <div class="card-socials">
+            <button class="card-socials-btn facebook">
+              <svg
+                class="icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                viewBox="0 0 24 24"
+                id="Layer_21"
+                height="24"
+                data-name="Layer 21"
+              >
+                <title></title>
+                <path
+                  d="M16.75,9H13.5V7a1,1,0,0,1,1-1h2V3H14a4,4,0,0,0-4,4V9H8v3h2v9h3.5V12H16Z"
+                ></path>
+              </svg>
+            </button>
+            <button class="card-socials-btn github">
+              <svg
+                viewBox="0 0 24 24"
+                height="33"
+                width="33"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                ></path>
+              </svg>
+            </button>
+            <button class="card-socials-btn linkedin">
+              <svg
+                height="512"
+                viewBox="0 0 512 512"
+                width="512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="m51.326 185.85h90.011v270.872h-90.011zm45.608-130.572c-30.807 0-50.934 20.225-50.934 46.771 0 26 19.538 46.813 49.756 46.813h.574c31.396 0 50.948-20.814 50.948-46.813-.589-26.546-19.551-46.771-50.344-46.771zm265.405 124.209c-47.779 0-69.184 26.28-81.125 44.71v-38.347h-90.038c1.192 25.411 0 270.872 0 270.872h90.038v-151.274c0-8.102.589-16.174 2.958-21.978 6.519-16.174 21.333-32.923 46.182-32.923 32.602 0 45.622 24.851 45.622 61.248v144.926h90.024v-155.323c0-83.199-44.402-121.911-103.661-121.911z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-photo"></div>
+          <div class="card-title">
+            JANE DOE <br />
+            <span>YOGA instuctor</span>
+          </div>
+          <div class="card-socials">
+            <button class="card-socials-btn facebook">
+              <svg
+                class="icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                viewBox="0 0 24 24"
+                id="Layer_21"
+                height="24"
+                data-name="Layer 21"
+              >
+                <title></title>
+                <path
+                  d="M16.75,9H13.5V7a1,1,0,0,1,1-1h2V3H14a4,4,0,0,0-4,4V9H8v3h2v9h3.5V12H16Z"
+                ></path>
+              </svg>
+            </button>
+            <button class="card-socials-btn github">
+              <svg
+                viewBox="0 0 24 24"
+                height="33"
+                width="33"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                ></path>
+              </svg>
+            </button>
+            <button class="card-socials-btn linkedin">
+              <svg
+                height="512"
+                viewBox="0 0 512 512"
+                width="512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="m51.326 185.85h90.011v270.872h-90.011zm45.608-130.572c-30.807 0-50.934 20.225-50.934 46.771 0 26 19.538 46.813 49.756 46.813h.574c31.396 0 50.948-20.814 50.948-46.813-.589-26.546-19.551-46.771-50.344-46.771zm265.405 124.209c-47.779 0-69.184 26.28-81.125 44.71v-38.347h-90.038c1.192 25.411 0 270.872 0 270.872h90.038v-151.274c0-8.102.589-16.174 2.958-21.978 6.519-16.174 21.333-32.923 46.182-32.923 32.602 0 45.622 24.851 45.622 61.248v144.926h90.024v-155.323c0-83.199-44.402-121.911-103.661-121.911z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-photo"></div>
+          <div class="card-title">
+            JOHN DOE <br />
+            <span>Instuctor</span>
+          </div>
+          <div class="card-socials">
+            <button class="card-socials-btn facebook">
+              <svg
+                class="icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                viewBox="0 0 24 24"
+                id="Layer_21"
+                height="24"
+                data-name="Layer 21"
+              >
+                <title></title>
+                <path
+                  d="M16.75,9H13.5V7a1,1,0,0,1,1-1h2V3H14a4,4,0,0,0-4,4V9H8v3h2v9h3.5V12H16Z"
+                ></path>
+              </svg>
+            </button>
+            <button class="card-socials-btn github">
+              <svg
+                viewBox="0 0 24 24"
+                height="33"
+                width="33"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                ></path>
+              </svg>
+            </button>
+            <button class="card-socials-btn linkedin">
+              <svg
+                height="512"
+                viewBox="0 0 512 512"
+                width="512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="m51.326 185.85h90.011v270.872h-90.011zm45.608-130.572c-30.807 0-50.934 20.225-50.934 46.771 0 26 19.538 46.813 49.756 46.813h.574c31.396 0 50.948-20.814 50.948-46.813-.589-26.546-19.551-46.771-50.344-46.771zm265.405 124.209c-47.779 0-69.184 26.28-81.125 44.71v-38.347h-90.038c1.192 25.411 0 270.872 0 270.872h90.038v-151.274c0-8.102.589-16.174 2.958-21.978 6.519-16.174 21.333-32.923 46.182-32.923 32.602 0 45.622 24.851 45.622 61.248v144.926h90.024v-155.323c0-83.199-44.402-121.911-103.661-121.911z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="plan">
+      <h1 class="section_title plan-title">Start The process</h1>
+      <h2 class="section_description plan-description">Choose a plan</h2>
+      <img class="section-img" src="" />
+      <div class="plan_section">
+        <div class="section1">
+          <div class="head">
+            <span class="head-title">Silver</span>
+            <span class="head-desc">Coach&execise</span>
+          </div>
+          <div class="price-tag">
+            <div class="price">
+              <span>Ksh</span>
+              <span>.</span>
+              <span>1000</span>
+            </div>
+            <span class="period">Monthly recurring payment</span>
+          </div>
+          <div class="span">
+            <div>
+              <i class="fa-solid fa-check"></i>
+              <span>Weights</span>
+            </div>
+            <div>
+              <i class="fa-solid fa-check"></i>
+              <span>Locker room</span>
+            </div>
+            <div>
+              <i class="fa-solid fa-check"></i>
+              <span>nutrition</span>
+            </div>
+            <div>
+              <i class="fa-solid fa-check"></i>
+              <span>Free-T</span>
+            </div>
+            <div>
+              <i class="fa-solid fa-check"></i>
+              <span>Free-T</span>
+            </div>
+          </div>
+          <div class="button-container">
+            <button type="button">Select Now</button>
+          </div>
+        </div>
+        <div class="section1">
+          <div class="head">
+            <span class="head-title">Silver</span>
+            <span class="head-desc">Coach&execise</span>
+          </div>
+          <div class="price-tag">
+            <div class="price">
+              <span>Ksh</span>
+              <span>.</span>
+              <span>1000</span>
+            </div>
+            <span class="period">Monthly recurring payment</span>
+          </div>
+          <div class="span">
+            <span>Weights</span>
+            <span>Locker room</span>
+            <span>nutrition</span>
+            <span>Free-T</span>
+            <span>Free-T</span>
+          </div>
+          <div class="button-container">
+            <button type="button">Select Now</button>
+          </div>
+        </div>
+        <div class="section1">
+          <div class="head">
+            <span class="head-title">Silver</span>
+            <span class="head-desc">Coach&execise</span>
+          </div>
+          <div class="price-tag">
+            <div class="price">
+              <span>Ksh</span>
+              <span>.</span>
+              <span>1000</span>
+            </div>
+            <span class="period">Monthly recurring payment</span>
+          </div>
+          <div class="span">
+            <span>Weights</span>
+            <span>Locker room</span>
+            <span>nutrition</span>
+            <span>Free-T</span>
+            <span>Free-T</span>
+          </div>
+          <div class="button-container">
+            <button type="button">Select Now</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="index.js"></script>
+  </body>
+</html>
