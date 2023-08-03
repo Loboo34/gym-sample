@@ -960,7 +960,10 @@ footer {
   display: flex;
 }
 .info{
-  padding-right: 30px;
+  padding-right: 40px;
+}
+.info p:hover{
+color: blue;
 }
 .srv{
   display: flex;
@@ -986,5 +989,7 @@ footer {
   justify-content: space-evenly;
 }
 .rights{
+  margin-left: 10px;
 padding-bottom: 2px;
+font-size: 12px;
 }
