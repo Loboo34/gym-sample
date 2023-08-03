@@ -433,6 +433,7 @@ body {
 
 /* team */
 .team {
+  padding-bottom: 30px;
   color: var(--clr-dark);
 }
 .team-title {
@@ -744,10 +745,9 @@ body {
 }
 .plan-title {
   font-size: 1.5rem;
-  padding-bottom: 10px;
+  padding: 15px 0 0px 10px;
 }
 .plan-description{
-  text-align: center;
 font-size: 1.9rem;
 }
 .plan_section {
