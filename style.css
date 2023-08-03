@@ -8,7 +8,7 @@
   --clr-dark: black;
   --clr-dark2: rgba(0, 0, 0, 0.667);
   --clr-light: white;
-  --clr-red: red;
+  --clr-red: rgba(255, 0, 0, 0.888);
   --ft-body: 1rem;
   --ft-normal: 1.25rem;
   --ft-head: 1.55rem;
@@ -34,7 +34,7 @@ body {
 .nav-bar {
   margin: 0;
   padding: 0;
-  background-color: #09e81f;
+ 
 }
 .nav-bar ul {
   display: flex;
@@ -52,7 +52,8 @@ body {
     margin-left: 6px;
      font-size: 26px;
     background-color: transparent;
-     text-decoration: none;
+    border: none;
+    color: white;
 }
 .wrapper {
   display: flex;
@@ -124,6 +125,7 @@ body {
 }
 .forgot a {
   text-decoration: none;
+   color: var(--clr-red);
 }
 .forgot a:hover {
   text-decoration: underline;
@@ -136,6 +138,7 @@ body {
 .reg a {
   text-decoration: none;
   padding-left: 5px;
+  color: var(--clr-red);
   
 }
 .reg a:hover {
@@ -179,7 +182,7 @@ body {
   padding-bottom: 30px;
   /* height: 600px; */
 }
-.home-description {
+.home_description, .home-title {
   text-align: center;
 }
 .home-title {
@@ -189,7 +192,7 @@ body {
   padding-bottom: 3px;
 }
 .home_description {
-  font-size: 15px;
+  font-size: 20px;
   padding-bottom: 50px;
 }
 
@@ -247,7 +250,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 2.2em;
+  height: 2em;
   width: 2.2em;
   border-radius: 0.7em;
   box-shadow: 0.1em 0.1em 0.6em 0.2em #7b52b9;
@@ -742,7 +745,7 @@ body {
   background: url(img/fweight.jpg), rgba(0, 0, 0, 0.815);
   background-blend-mode: multiply;
   background-size: cover;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
 .plan-title {
   font-size: 1.5rem;
