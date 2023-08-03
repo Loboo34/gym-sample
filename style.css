@@ -16,9 +16,6 @@
   --fw-normal: 600;
   --fw-bold: 900;
 }
-section {
-  padding: 2em 1em;
-}
 body {
   background-color: var(--clr-light);
   color: var(--clr-dark);
@@ -35,6 +32,8 @@ body {
 }
 
 .nav-bar {
+  margin: 0;
+  padding: 0;
   background-color: #09e81f;
 }
 .nav-bar ul {
@@ -175,9 +174,9 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: multiply;
-
   color: var(--clr-light);
   background-color: rgba(0, 0, 255, 0.493);
+  padding-bottom: 30px;
   /* height: 600px; */
 }
 .home-description {
@@ -217,6 +216,7 @@ body {
   text-transform: uppercase;
   color: transparent;
   -webkit-text-stroke: 1px var(--text-stroke-color);
+ 
 }
 .cssbuttons-io-button {
   background: var(--clr-blue);
@@ -225,6 +225,7 @@ body {
   padding: 0.35em;
   padding-left: 1.2em;
   font-size: 17px;
+  margin-left: 2em;
   font-weight: 500;
   border-radius: 0.9em;
   border: none;
@@ -236,6 +237,7 @@ body {
   position: relative;
   height: 2.8em;
   padding-right: 3.3em;
+ 
 }
 
 .cssbuttons-io-button .icon {
@@ -251,6 +253,7 @@ body {
   box-shadow: 0.1em 0.1em 0.6em 0.2em #7b52b9;
   right: 0.3em;
   transition: all 0.3s;
+  
 }
 
 .cssbuttons-io-button:hover .icon {
@@ -291,7 +294,7 @@ body {
 .prog-card {
   width: 90%;
   position: relative;
-  background-color: red;
+
   padding-bottom: 5px;
 }
 .prog-pic {
@@ -319,7 +322,7 @@ body {
     height: 300px;
 
     position: relative;
-    background-color: red;
+
   }
 }
 
@@ -739,22 +742,28 @@ body {
   background-blend-mode: multiply;
   background-size: cover;
 }
-.plan-title,
-.plan-description {
+.plan-title {
   font-size: 1.5rem;
+  padding-bottom: 10px;
+}
+.plan-description{
+  text-align: center;
+font-size: 1.9rem;
 }
 .plan_section {
-  padding-top: 30px;
+  padding-top: 15px;
 }
 .section1 {
   position: relative;
   display: flex;
   flex-direction: column;
-
   padding: 1.6rem;
   width: 100%;
   font-size: 18px;
   margin-bottom: 20px;
+}
+.silver-sec{
+border: var( --clr-red) solid 5px;
 }
 .head {
   line-height: 80%;
@@ -762,7 +771,7 @@ body {
   display: flex;
   flex-direction: column;
   padding-top: 50px;
-  padding-bottom: 35px;
+  padding-bottom: 17px;
 }
 
 .sec-btn {
@@ -779,17 +788,22 @@ body {
   display: flex;
   flex-direction: column;
   padding-bottom: 35px;
+  color: white;
 }
 .price {
-  font-size: 2.5rem;
+  display: flex;
+  justify-content: center;
 }
-.span {
+.price span{
+  font-size: 1.5rem;
+}
+.items {
   display: flex;
   flex-direction: column;
   text-align: left;
   padding-bottom: 35px;
 }
-.span i {
+.items i {
   color: black;
   font-size: 14px;
   background-color: white;
@@ -813,6 +827,10 @@ body {
   outline: 0;
   border: 0;
   font-size: 1rem;
+}
+.button-container button:hover{
+  background-color: var(--clr-blue);
+  color: white;
 }
 @media (min-width: 768px) {
   .plan_section {
@@ -927,3 +945,46 @@ body {
   color: rgba(17, 24, 39, 1);
 } 
 /* plan */
+
+/*footer*/
+footer {
+  background-color: #000;
+  color: white;
+}
+.serv{
+  display: flex;
+  justify-content: space-between;
+  margin-left: 30px;
+}
+.serv-info{
+  display: flex;
+}
+.info{
+  padding-right: 30px;
+}
+.srv{
+  display: flex;
+  margin-right: 40px;
+}
+.icon{
+  font-size: 1.5em;
+  transition: transform 0.5s;
+}
+.icon:hover{
+  color: var(--clr-blue);
+  transform: scale(1.2);
+}
+.socials{
+   padding-right: 35px;
+}
+.socials .icons {
+  display: flex;
+  justify-content: space-evenly;
+}
+.cash .icons{
+  display: flex;
+  justify-content: space-evenly;
+}
+.rights{
+padding-bottom: 2px;
+}
