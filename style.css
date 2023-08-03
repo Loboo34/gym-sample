@@ -742,6 +742,7 @@ body {
   background: url(img/fweight.jpg), rgba(0, 0, 0, 0.815);
   background-blend-mode: multiply;
   background-size: cover;
+  padding-bottom: 20px;
 }
 .plan-title {
   font-size: 1.5rem;
