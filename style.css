@@ -30,12 +30,15 @@ body {
   margin: 0;
   font-size: var(--fs-h3);
 }
-
+@media (max-width: 680px){
+  .nav-bar {
+ display: none;
+}
+}
 .nav-bar {
-  margin: 0;
+   margin: 0;
   padding: 0;
   display: absolute;
- 
 }
 .nav-bar ul {
   display: flex;
