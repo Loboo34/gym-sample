@@ -34,6 +34,7 @@ body {
 .nav-bar {
   margin: 0;
   padding: 0;
+  display: absolute;
  
 }
 .nav-bar ul {
@@ -365,6 +366,7 @@ body {
 .about-us {
   color: white;
   background-color: black;
+  width: 100%;
 }
 .about-img {
   width: 350px;
@@ -438,6 +440,7 @@ body {
 .team {
   padding-bottom: 30px;
   color: var(--clr-dark);
+  margin: 0 10px 0 10px;
 }
 .team-title {
   font-size: var(--ft-head);
@@ -458,6 +461,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
 }
 .team-img {
   width: 150px;
@@ -498,6 +502,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  
 }
 
 .card-photo {
@@ -831,10 +836,12 @@ border: var( --clr-red) solid 5px;
   outline: 0;
   border: 0;
   font-size: 1rem;
+  transition: transform 0.4s;
 }
 .button-container button:hover{
   background-color: var(--clr-blue);
   color: white;
+  transform: scale(1.1);
 }
 @media (min-width: 768px) {
   .plan_section {
@@ -956,9 +963,15 @@ footer {
   color: white;
 }
 .serv{
-  display: flex;
+ 
+  margin-left: 30px;
+}
+@media (min-width: 768px){
+  .serv{
+    display: flex;
   justify-content: space-between;
   margin-left: 30px;
+  }
 }
 .serv-info{
   display: flex;
@@ -997,3 +1010,4 @@ color: blue;
 padding-bottom: 2px;
 font-size: 12px;
 }
+
