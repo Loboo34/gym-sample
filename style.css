@@ -296,41 +296,55 @@ body {
 }
 .programs {
   justify-content: space-between;
-  margin-left: 20px;
+  margin-left: 15px;
+  margin-right: 15px;
 }
-.prog-card {
-  width: 90%;
+.prog-card{
   position: relative;
-
-  padding-bottom: 5px;
+   width: 100%;
+  height: 400px;
+  margin-bottom: 10px;
 }
-.prog-pic {
+.prog-card img {
   width: 100%;
-  height: 100%;
-  position: relative;
+  height: 400px;
 }
-.prog_description {
+.overlay{
   position: absolute;
-  color: black;
-  left: -35px;
-  bottom: 35px;
-  transform: rotate(-90deg);
-  font-size: var(--ft-head);
-  color: var(--clr-blue);
+  width: 100%;
+  height: 0;
+  background-color: #0000008f;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+   transition: all 0.3s ease;
+}
+.overlay h1{
+  color: white;
+  opacity: 1;
+}
+.prog-card:hover .overlay {
+  opacity: 1;
+  height: 100%;
 }
 @media (min-width: 768px) {
   .programs {
     display: flex;
     justify-content: space-between;
-    margin: 0 50px 0 50px;
   }
-  .prog-card {
-    width: 200px;
-    height: 300px;
-
-    position: relative;
-
-  }
+ .prog-card{
+  position: relative;
+   width: 300px;
+  height: 400px;
+  margin-bottom: 10px;
+}
+.prog-card img {
+  width: 300px;
+  height: 400px;
+}
 }
 
 .prog-btn {
