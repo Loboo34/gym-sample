@@ -42,19 +42,19 @@ body {
 }
 .nav-bar ul {
   display: flex;
-  justify-content: right;
+  justify-content: center;
   list-style: none;
   padding: 0;
   margin: 0;
 }
 .nav-bar ul li {
   padding: 0px 15px 2px 0px;
-  font-size: 30px;
+  font-size: 20px;
 }
 .log-btn{
   padding-right: 10px;
     margin-left: 6px;
-     font-size: 26px;
+     font-size: 20px;
     background-color: transparent;
     border: none;
     color: white;
@@ -926,6 +926,8 @@ border: var( --clr-red) solid 5px;
 .button-container {
   margin-top: 20px;
   padding: 0;
+  display: flex;
+  justify-content: center;
 }
 
 .button-container button {
@@ -1019,31 +1021,57 @@ border: var( --clr-red) solid 5px;
 
 /*footer*/
 footer {
-  background-color: #000;
+  background-color: #000000ef;
   color: white;
+}
+.letter-wrapper{
+display: flex;
+justify-content:center ;
+}
+.news-letter h1{
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+.news-letter p{
+  text-align: center;
+  
+}
+form{
+ display: flex;
+ flex-direction: column; 
+ grid-template-columns: 2;
+ padding-bottom: 30px;
+}
+input{
+  padding: 10px;
+margin: 0 15px 15px 0;
+
+}
+.email{
+  padding-right: 112px;
+  
+}
+.singup-btn{
+  background-color: var(--clr-blue);
+  color: white;
+  padding: 10px;
+  font-size: 18px;
 }
 .serv{
   margin-left: 30px;
 }
 
 .serv-info{
-  display: flex;
-}
-.info{
-  padding-right: 40px;
-}
-.info h2 {
-  font-size: 16px;
-}
-.info p:hover{
-color: blue;
+ display: none;
 }
 .srv{
   display: flex;
+  justify-content: space-evenly;
   margin-right: 40px;
 }
 .icon{
-  font-size: 1.5em;
+  font-size: 1.2em;
   transition: transform 0.5s;
 }
 .icon:hover{
@@ -1054,7 +1082,7 @@ color: blue;
    padding-right: 35px;
 }
 .srv h2{
-  font-size: 16px;
+  font-size: 18px;
 }
 .socials .icons {
   display: flex;
@@ -1075,10 +1103,23 @@ font-size: 12px;
   justify-content: space-between;
   margin-left: 30px;
   }
+  .serv-info{
+  display: flex;
+}
+.info{
+  padding-right: 40px;
+}
+.info p:hover{
+color: blue;
+}
   .info h2{
     font-size: 22px;
   }
   .srv h2{
   font-size: 22px;
+}
+.icon{
+  font-size: 1.4em;
+  transition: transform 0.5s;
 }
 }
