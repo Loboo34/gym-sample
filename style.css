@@ -180,11 +180,13 @@ body {
   background-image: url(img/fweight.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   background-blend-mode: multiply;
   color: var(--clr-light);
   background-color: rgba(0, 0, 255, 0.493);
   padding-bottom: 30px;
-  /* height: 600px; */
+   height: 100%;
 }
 .home_description, .home-title {
   text-align: center;
@@ -458,6 +460,16 @@ body {
   padding-bottom: 30px;
   color: var(--clr-dark);
   margin: 0 10px 0 10px;
+}
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
 }
 .team-title {
   font-size: var(--ft-head);
@@ -767,6 +779,8 @@ body {
   background: url(img/fweight.jpg), rgba(0, 0, 0, 0.815);
   background-blend-mode: multiply;
   background-size: cover;
+   background-position: center;
+  background-attachment: fixed;
   padding-bottom: 10px;
 }
 .plan-title {
