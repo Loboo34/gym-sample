@@ -184,7 +184,8 @@ body {
   background-attachment: fixed;
   background-blend-mode: multiply;
   color: var(--clr-light);
-  background-color: rgba(0, 0, 255, 0.493);
+  /* background-color: rgba(0, 0, 255, 0.493); */
+   background-color: #000000d7;
   padding-bottom: 30px;
    height: 100%;
 }
@@ -386,6 +387,16 @@ body {
   color: white;
   background-color: black;
   width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 15px;
+   background-image: url(img/fweight.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-blend-mode: multiply;
+  background-color: #000000d7;
 }
 .about-img {
   width: 350px;
@@ -396,7 +407,7 @@ body {
 }
 
 .about-title {
-  font-size: 70px;
+  font-size: 30px;
   color: var(--clr-light);
   text-shadow: -1px 1px 2px rgb(44, 44, 250), 1px 2px 6px rgb(44, 44, 250),
     1px -1px 0 rgb(44, 44, 250), -1px -1px 0 rgb(44, 44, 250);
@@ -404,8 +415,12 @@ body {
   font-family: "Kanit", sans-serif;
   font-style: italic;
 }
+.about-description{
+  font-size: 20px;
+}
 .about_description {
-  padding-bottom: 30px;
+  padding-bottom: 1%;
+  font-size: 18px;
 }
 .btn {
   border: 0 solid;
@@ -413,9 +428,9 @@ body {
   font-family: system-ui;
   font-size: 100%;
   background: linear-gradient(90deg, blue, red);
-
+margin-bottom: 15px;
   font-weight: 900;
-  padding: 1.8rem 5rem;
+  padding: 1.2rem 4rem;
   position: relative;
   text-transform: uppercase;
 }
@@ -436,6 +451,7 @@ body {
 @media (min-width: 768px) {
   .about-title {
     margin: 0;
+    font-size: 45px;
   }
   .about-us {
     display: flex;
@@ -444,8 +460,11 @@ body {
     max-width: 1000px;
     text-align: left;
   }
+  .about-description{
+    font-size: 30px;
+  }
   .about_description {
-    margin-left: 2em;
+    font-size: 20px;
   }
 }
 @media (max-width: 780px) {
@@ -1004,21 +1023,17 @@ footer {
   color: white;
 }
 .serv{
- 
   margin-left: 30px;
 }
-@media (min-width: 768px){
-  .serv{
-    display: flex;
-  justify-content: space-between;
-  margin-left: 30px;
-  }
-}
+
 .serv-info{
   display: flex;
 }
 .info{
   padding-right: 40px;
+}
+.info h2 {
+  font-size: 16px;
 }
 .info p:hover{
 color: blue;
@@ -1038,6 +1053,9 @@ color: blue;
 .socials{
    padding-right: 35px;
 }
+.srv h2{
+  font-size: 16px;
+}
 .socials .icons {
   display: flex;
   justify-content: space-evenly;
@@ -1051,4 +1069,16 @@ color: blue;
 padding-bottom: 2px;
 font-size: 12px;
 }
-
+@media (min-width: 768px){
+  .serv{
+    display: flex;
+  justify-content: space-between;
+  margin-left: 30px;
+  }
+  .info h2{
+    font-size: 22px;
+  }
+  .srv h2{
+  font-size: 22px;
+}
+}
