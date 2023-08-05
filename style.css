@@ -484,12 +484,12 @@ margin-bottom: 15px;
   position: relative;
   transform: translateY(150px);
   opacity: 0;
-  transition: 1s all ease;
+  transition: 2s all ease;
 } */
-.reveal.active{
+/* .reveal.active{
   transform: translateY(0);
   opacity: 1;
-}
+} */
 .team-title {
   font-size: var(--ft-head);
   text-align: center;
