@@ -35,20 +35,26 @@ body {
  display: none;
 }
 }
+
 .nav-bar {
    margin: 0;
-  padding: 0;
-  display: absolute;
+   padding-top: 5px;
+  padding-bottom: 10px;
+  display: relative;
+  background-color: #000;
+  color: white;
+  padding-bottom: 10px;
 }
 .nav-bar ul {
   display: flex;
   justify-content: center;
+  align-items: center;
   list-style: none;
   padding: 0;
   margin: 0;
 }
 .nav-bar ul li {
-  padding: 0px 15px 2px 0px;
+  padding: 0px 15px 0px 0px;
   font-size: 20px;
 }
 .log-btn{
@@ -58,6 +64,9 @@ body {
     background-color: transparent;
     border: none;
     color: white;
+    position: absolute;
+    top: 10px;
+    right: 5px;
 }
 .wrapper {
   display: flex;
@@ -184,8 +193,8 @@ body {
   background-attachment: fixed;
   background-blend-mode: multiply;
   color: var(--clr-light);
-  /* background-color: rgba(0, 0, 255, 0.493); */
-   background-color: #000000d7;
+   background-color: rgba(0, 0, 255, 0.493); 
+   /* background-color: #000000d7; */
   padding-bottom: 30px;
    height: 100%;
 }
@@ -233,9 +242,9 @@ body {
   color: white;
   font-family: inherit;
   padding: 0.35em;
-  padding-left: 1.2em;
-  font-size: 17px;
-  margin-left: 2em;
+  padding-left: 1em;
+  font-size: 16px;
+  margin-left: 1em;
   font-weight: 500;
   border-radius: 0.9em;
   border: none;
@@ -246,7 +255,7 @@ body {
   overflow: hidden;
   position: relative;
   height: 2.8em;
-  padding-right: 3.3em;
+  padding-right: 3.7em;
  
 }
 
@@ -262,8 +271,7 @@ body {
   border-radius: 0.7em;
   box-shadow: 0.1em 0.1em 0.6em 0.2em #7b52b9;
   right: 0.3em;
-  transition: all 0.3s;
-  
+  transition: all 0.3s; 
 }
 
 .cssbuttons-io-button:hover .icon {
