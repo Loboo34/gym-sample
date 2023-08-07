@@ -56,6 +56,10 @@ body {
 .nav-bar ul li {
   padding: 0px 15px 0px 0px;
   font-size: 20px;
+  cursor: pointer;
+}
+.nav-bar ul li:hover{
+  color: var(--clr-blue);
 }
 .log-btn{
   padding-right: 10px;
@@ -1048,7 +1052,10 @@ border: var( --clr-red) solid 5px;
   color: rgba(17, 24, 39, 1);
 } 
 /* plan */
-
+.news_letter{
+   background-color: #000000ef;
+  color: white;
+}
 /*footer*/
 footer {
   background-color: #000000ef;
@@ -1056,7 +1063,7 @@ footer {
 }
 .letter-wrapper{
 display: flex;
-justify-content:center ;
+justify-content: center;
 }
 .news-letter h1{
   text-align: center;
@@ -1065,7 +1072,38 @@ justify-content:center ;
 }
 .news-letter p{
   text-align: center;
-  
+  font-size: 12px;
+}
+form{
+ display: grid ;
+ grid-column: 1;
+}
+.sect{
+  display: flex;
+  flex-direction: column;
+}
+input{
+  padding: 5px 0 5px 5px;
+margin-bottom: 3px;
+font-size: 16px;
+}
+.singup-btn{
+  background-color: var(--clr-blue);
+  color: white;
+}
+@media (min-width: 768px){
+  .letter-wrapper{
+display: flex;
+justify-content:center ;
+}
+ .news-letter h1{
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+  .news-letter p{
+  text-align: center;
+  font-size: 16px;
 }
 form{
  display: flex;
@@ -1073,20 +1111,23 @@ form{
  grid-template-columns: 2;
  padding-bottom: 30px;
 }
+.sect{
+  display: flex;
+  flex-direction: row;
+}
 input{
   padding: 10px;
-margin: 0 15px 15px 0;
-
+margin: 0 12px 15px 0;
 }
 .email{
-  padding-right: 112px;
-  
+  padding-right: 115px;
 }
 .singup-btn{
   background-color: var(--clr-blue);
   color: white;
-  padding: 10px;
+  padding: 10px 15px 10px 15px;
   font-size: 18px;
+}
 }
 .serv{
   margin-left: 30px;
@@ -1128,6 +1169,7 @@ padding-bottom: 2px;
 font-size: 12px;
 }
 @media (min-width: 768px){
+ 
   .serv{
     display: flex;
   justify-content: space-between;
