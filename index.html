@@ -27,75 +27,86 @@
     <title>Gym</title>
   </head>
   <header>
-     
-       <div class="wrapper login">
-        <span class="close-icon">
-          <i class="fa-sharp fa-solid fa-xmark"></i>
-        </span>
+    <div class="wrapper login">
+      <span class="close-icon">
+        <i class="fa-sharp fa-solid fa-xmark"></i>
+      </span>
 
-        <div class="form-box login">
-          <h2 class="tt">Log In</h2>
-          <form>
-            <div class="input-box">
-              <label>Email</label>
-              <input type="email" placeholder="name@email.com" required />
-            </div>
-            <div class="input-box">
-              <label>Password</label>
-              <input type="password" placeholder="Password" required />
-            </div>
-            <div class="forgot">
-              <label> <input type="checkbox" /> Remember me? </label>
-              <a href="#">Forgot password?</a>
-            </div>
-            <button type="submit" class="bnt">Login</button>
-            <div class="reg">
-              <p>
-                Dont have an account?<a href="#" class="register-link"
-                  >Register</a
-                >
-              </p>
-            </div>
-          </form>
-        </div>
-        <div class="form-box register">
-          <h2 class="tt">Register</h2>
-          <form>
-            <div class="input-box">
-              <label>Your name</label>
-              <input type="email" placeholder="Name" required />
-            </div>
-            <div class="input-box">
-              <label>Your name</label>
-              <input type="email" placeholder="name@email.com" required />
-            </div>
-            <div class="input-box">
-              <label>Password</label>
-              <input type="password" placeholder="Password" required />
-            </div>
-            <div class="input-box">
-              <label>Confirm Password</label>
-              <input type="password" placeholder="Confirm Password" required />
-            </div>
-
-            <button type="submit" class="bnt">Register</button>
-            <div class="reg">
-              <p>Have an account?<a href="#" class="login-link">Login</a></p>
-            </div>
-          </form>
-        </div>
+      <div class="form-box login">
+        <h2 class="tt">Log In</h2>
+        <form>
+          <div class="input-box">
+            <label>Email</label>
+            <input type="email" placeholder="name@email.com" required />
+          </div>
+          <div class="input-box">
+            <label>Password</label>
+            <input type="password" placeholder="Password" required />
+          </div>
+          <div class="forgot">
+            <label> <input type="checkbox" /> Remember me? </label>
+            <a href="#">Forgot password?</a>
+          </div>
+          <button type="submit" class="bnt">Login</button>
+          <div class="reg">
+            <p>
+              Dont have an account?<a href="#" class="register-link"
+                >Register</a
+              >
+            </p>
+          </div>
+        </form>
       </div>
-    </header>
+      <div class="form-box register">
+        <h2 class="tt">Register</h2>
+        <form>
+          <div class="input-box">
+            <label>Your name</label>
+            <input type="email" placeholder="Name" required />
+          </div>
+          <div class="input-box">
+            <label>Your name</label>
+            <input type="email" placeholder="name@email.com" required />
+          </div>
+          <div class="input-box">
+            <label>Password</label>
+            <input type="password" placeholder="Password" required />
+          </div>
+          <div class="input-box">
+            <label>Confirm Password</label>
+            <input type="password" placeholder="Confirm Password" required />
+          </div>
+
+          <button type="submit" class="bnt">Register</button>
+          <div class="reg">
+            <p>Have an account?<a href="#" class="login-link">Login</a></p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </header>
   <body>
-     <section class="home">
-       <div class="nav">
+    <section class="home">
+      <div class="nav">
         <nav class="nav-bar">
           <ul>
             <li>Home</li>
             <li>Join us</li>
             <li>About</li>
-            <li>Programs</li>
-            <li>Training</li>
+            <div class="dropdown-container">
+              <li>Programs</li>
+              <div class="dropdown">
+                <p>shred prog</p>
+                <p>Bulk up</p>
+              </div>
+            </div>
+               <div class="dropdown-container">
+              <li >Training </li>
+              <div class="dropdown">
+                <p >Personal Training</p>
+              <p >Group Training</p>
+              </div>
+            </div>
             <li>Contact Us</li>
             <li>Blog</li>
             <!-- <button class="log-btn">Log in</button> -->
@@ -126,8 +137,8 @@
           </svg>
         </div>
       </button>
-    </section> 
-    
+    </section>
+
     <section class="progs">
       <h1 class="section_title progs-title">Our programs</h1>
       <div class="programs">
