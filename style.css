@@ -1060,7 +1060,10 @@ border: var( --clr-red) solid 5px;
 footer {
   background-color: #000000ef;
   color: white;
+  position: relative;
+  padding-bottom: 1px;
 }
+
 .letter-wrapper{
 display: flex;
 justify-content: center;
@@ -1161,11 +1164,17 @@ margin: 0 12px 15px 0;
 .cash, .serv-info{
   display: none;
 }
-
 .rights{
+  background-color: #000000eb;
   margin-left: 10px;
-padding-bottom: 2px;
-font-size: 12px;
+  font-size: 12px;
+  z-index: 1;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.rights p{
+  
 }
 @media (min-width: 768px){
   .serv{
