@@ -1132,10 +1132,6 @@ margin: 0 12px 15px 0;
 .serv{
   margin-left: 30px;
 }
-
-.serv-info{
- display: none;
-}
 .srv{
   display: flex;
   justify-content: space-evenly;
@@ -1159,17 +1155,19 @@ margin: 0 12px 15px 0;
   display: flex;
   justify-content: space-evenly;
 }
-.cash .icons{
-  display: flex;
-  justify-content: space-evenly;
+.socials .icons .icon {
+  padding: 0;
 }
+.cash, .serv-info{
+  display: none;
+}
+
 .rights{
   margin-left: 10px;
 padding-bottom: 2px;
 font-size: 12px;
 }
 @media (min-width: 768px){
- 
   .serv{
     display: flex;
   justify-content: space-between;
@@ -1193,5 +1191,9 @@ color: blue;
 .icon{
   font-size: 1.4em;
   transition: transform 0.5s;
+}
+.cash .icons{
+  display: flex;
+  justify-content: space-evenly;
 }
 }
