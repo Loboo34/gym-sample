@@ -337,6 +337,11 @@ body {
 .progs {
   padding-bottom: 2em;
 }
+.progs-title{
+  padding: 0 0 10px 20px;
+  font-size: 26px;
+  text-align: center;
+}
 .programs {
   justify-content: space-between;
   margin-left: 15px;
@@ -345,12 +350,12 @@ body {
 .prog-card{
   position: relative;
    width: 100%;
-  height: 400px;
+  height: 260px;
   margin-bottom: 10px;
 }
 .prog-card img {
   width: 100%;
-  height: 400px;
+  height: 260px;
 }
 .overlay{
   position: absolute;
