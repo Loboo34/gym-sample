@@ -3,6 +3,10 @@
 *::after {
   box-sizing: border-box;
 }
+html,
+body {
+  scroll-behavior: smooth;
+}
 :root {
   --clr-blue: rgb(44, 44, 250);
   --clr-dark: black;
@@ -15,6 +19,7 @@
   --fw-reg: 300;
   --fw-normal: 600;
   --fw-bold: 900;
+  --offset:50px;
 }
 body {
   background-color: var(--clr-light);
@@ -22,6 +27,30 @@ body {
   margin: 0;
   font-size: var(--fs-body);
   line-height: 1.6;
+}
+.top{
+ position: sticky;
+  bottom: 20px;  
+  color: gray;
+  margin-right:10px; 
+  place-self: start;
+  margin-top: calc(100vh + var(--offset));
+  width:45px;
+  aspect-ratio:1;
+  background: black;
+  border-radius:15px;
+  padding: 8px 10px 8px 10px;
+}
+.top i{
+  rotate: 90deg;
+}
+.t0p::before{
+    content:"";
+  position:absolute;
+  inset:30%;
+  transform:translateY(20%) rotate(-45deg);
+  border-top:5px solid #fff;
+  border-right:5px solid #fff;
 }
 .section_title {
   margin-bottom: 0.25em;
@@ -1149,7 +1178,7 @@ margin: 0 12px 15px 0;
 .srv{
   display: flex;
   justify-content: space-evenly;
-  margin-right: 40px;
+  margin-right: 70px;
 }
 .icon{
   font-size: 1.2em;
@@ -1204,6 +1233,9 @@ color: blue;
   }
   .srv h2{
   font-size: 22px;
+}
+.cash{
+  display: block;
 }
 .icon{
   font-size: 1.4em;
