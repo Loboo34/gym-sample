@@ -129,37 +129,20 @@ body {
   display: block;
    transition: 10s ease;
 }
-@media (min-width: 768px) {
-  .wrapper {
-  display: flex;
-  color: white;
-  justify-content: center;
-  position: absolute;
-  z-index: 30;
-  left: 40%;
-  background-image: url(img/fweight.jpg);
-  background-size: cover;
-  background-blend-mode: multiply;
-  background-color: rgba(0, 0, 0, 0.813);
-  width: 100%;
-  height: 440px;
-  overflow: hidden;
-  transform: scale(0);
-  transition: transform 0.5s ease, height 0.2s ease;
-}
-}
+
 .wrapper {
   display: flex;
   color: white;
   justify-content: center;
   position: absolute;
   z-index: 1;
-  left: 40%;
+align-items: center;
+left: 2%;
   background-image: url(img/fweight.jpg);
   background-size: cover;
   background-blend-mode: multiply;
   background-color: rgba(0, 0, 0, 0.813);
- width: 400px;
+  width: 95%;
   height: 440px;
   overflow: hidden;
   transform: scale(0);
@@ -167,6 +150,46 @@ body {
 }
 .wrapper.active {
   height: 520px;
+}
+@media (min-width: 768px) {
+  .wrapper {
+  display: flex;
+  color: white;
+  justify-content: center;
+  position: absolute;
+  align-items: center;
+  z-index: 30;
+  left: 40%;
+  background-image: url(img/fweight.jpg);
+  background-size: cover;
+  background-blend-mode: multiply;
+  background-color: rgba(0, 0, 0, 0.813);
+  width: 400px;
+  height: 440px;
+  overflow: hidden;
+  transform: scale(0);
+  transition: transform 0.5s ease, height 0.2s ease;
+} 
+.wrapper.active {
+  height: 520px;
+}
+.wrapper .form-box.register {
+  position: absolute;
+  transition: none;
+  transform: translateX(400px);
+}
+.wrapper .form-box.login {
+  transition: transform 0.18s ease;
+  transform: translateX(0);
+}
+.wrapper.active .form-box.login {
+  transition: none;
+  transform: translateX(-400px);
+}
+.wrapper.active .form-box.register {
+  transition: transform 0.18s ease;
+  transform: translateX(0);
+}
 }
 .wrapper.active-popup {
   transform: scale(1);
@@ -249,7 +272,7 @@ body {
 .wrapper .form-box.register {
   position: absolute;
   transition: none;
-  transform: translateX(400px);
+  transform: translateX(100%);
 }
 .wrapper .form-box.login {
   transition: transform 0.18s ease;
@@ -257,7 +280,7 @@ body {
 }
 .wrapper.active .form-box.login {
   transition: none;
-  transform: translateX(-400px);
+  transform: translateX(-100%);
 }
 .wrapper.active .form-box.register {
   transition: transform 0.18s ease;
@@ -1148,6 +1171,7 @@ input{
   padding: 5px 0 5px 5px;
 margin-bottom: 3px;
 font-size: 16px;
+background-color: white;
 }
 .singup-btn{
   background-color: var(--clr-blue);
