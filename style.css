@@ -59,7 +59,6 @@ body {
   margin: 0;
   font-size: var(--fs-h3);
 }
-
 .openbtn{
   font-size: 30px;
   display: flex;
@@ -92,7 +91,6 @@ align-items: center;
 .nav-bar ul li {
  font-size: var(--ft-head);
 }
-
 .nav-bar ul li:hover{
   color: var(--clr-blue);
 }
@@ -112,7 +110,6 @@ align-items: center;
   text-decoration: none;
   color: white;
 }
-
 @media (min-width: 768px){
  .closebtn {
   display: none;
@@ -164,8 +161,7 @@ align-items: center;
 .dropdown-container{
   position: relative;
   display: inline-block;
-  cursor: pointer;
-  
+  cursor: pointer; 
 }
 .dropdown{
   display: none;
@@ -176,14 +172,12 @@ align-items: center;
   background-color: #000;
   min-width: 200px;
   padding: 5px 3px 5px 10px;
-   line-height: 1;
-  
+   line-height: 1; 
 }
 .dropdown-container:hover .dropdown{
   display: block;
    transition: 10s ease;
 }
-
 .wrapper {
   display: flex;
   color: white;
@@ -519,7 +513,6 @@ left: 2%;
   height: 400px;
 }
 }
-
 .prog-btn {
   cursor: pointer;
   font-weight: 700;
@@ -650,16 +643,6 @@ margin-bottom: 15px;
   color: var(--clr-dark);
   margin: 0 10px 0 10px;
 }
- /* .reveal{
-  position: relative;
-  transform: translateY(150px);
-  opacity: 0;
-  transition: 2s all ease;
-} */
-/* .reveal.active{
-  transform: translateY(0);
-  opacity: 1;
-} */
 .team-title {
   font-size: var(--ft-head);
   text-align: center;
@@ -1086,8 +1069,6 @@ border: var( --clr-red) solid 5px;
     margin: 0 20px 0 20px;
   }
 }
-
-
 .list p {
   display: block;
   font-family: sans-serif;
@@ -1344,8 +1325,7 @@ color: blue;
 }
 }
 
-
-
+/*--------------------------------------*/
 /*About us*/
 .about{
     position: relative;
@@ -1370,7 +1350,6 @@ color: blue;
 }
 
 .story{
- 
   padding: 0 7px 16px 7px;
 }
 .story img{
